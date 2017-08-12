@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/floating_labels"
+        android:title="Floating labels"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/auto_complete_text"
+        android:title="Auto_Complete_text"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/multi_line_text"
+        android:title="Multi Line Text Field"
+        app:showAsAction="never" />
+</menu>

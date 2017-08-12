@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/darksalmon</item>
+    </style>
+
+    <style name="MainActivityButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="colorButtonNormal">@color/gray</item>
+    </style>
+
+    <style name="CheckBoxActivityCheckBox" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+
+    </style>
+    <style name="TextFieldActivity_Text_Fields" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/tomato</item>
+        <item name="colorControlActivated">@color/sienna</item>
+
+    </style>
+    <style name="TextFieldActivity_Text_Fields_full_width" parent="Widget.AppCompat.EditText">
+        <item name="android:padding">20sp</item>
+        <item name="android:background">@null</item>
+    </style>
+    <style name="MyOverFlowText" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/green</item>
+    </style>
+
+</resources>
