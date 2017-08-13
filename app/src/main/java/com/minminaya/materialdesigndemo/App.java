@@ -9,10 +9,16 @@ import com.blankj.utilcode.util.Utils;
  */
 
 public class App extends Application {
+    private static App INSTANCE;
+
+    public static App getINSTANCE() {
+        return INSTANCE;
+    }
 
     @Override
     public void onCreate() {
         super.onCreate();
         Utils.init(this);
+        INSTANCE = this;
     }
 }

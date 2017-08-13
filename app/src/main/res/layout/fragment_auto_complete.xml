@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.minminaya.materialdesigndemo.text_fields.fragment.AutoCompleteFragment">
+
+    <AutoCompleteTextView
+        android:id="@+id/auto_complete_text_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search Dogs默认" />
+
+    <AutoCompleteTextView
+        android:layout_marginTop="100dp"
+        android:id="@+id/auto_complete_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dropDownAnchor="@+id/anchor"
+        android:hint="Search Dogs"
+        android:theme="@style/AutoComplete" />
+
+    <TextView
+        android:id="@+id/anchor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="anchor"
+        android:textSize="21sp" />
+
+    <AutoCompleteTextView
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="150dp"
+        android:id="@+id/auto_complete_text_custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="自定义的Search Dogs"
+        android:theme="@style/AutoComplete" />
+</RelativeLayout>

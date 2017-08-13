@@ -5,10 +5,11 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
 
 import com.blankj.utilcode.util.FragmentUtils;
-import com.blankj.utilcode.util.LogUtils;
 import com.minminaya.materialdesigndemo.R;
+import com.minminaya.materialdesigndemo.text_fields.fragment.AutoCompleteFragment;
 import com.minminaya.materialdesigndemo.text_fields.fragment.FloatingLabelsFragment;
 import com.minminaya.materialdesigndemo.text_fields.fragment.TextFieldsFrament;
 
@@ -37,10 +38,9 @@ public class TextFieldsActivity extends AppCompatActivity {
                 break;
             case R.id.auto_complete_text:
                 FragmentUtils.removeAllFragments(getSupportFragmentManager());
-                FragmentUtils.addFragment(getSupportFragmentManager(), new FloatingLabelsFragment(), R.id.text_fields_content);
+                FragmentUtils.addFragment(getSupportFragmentManager(), new AutoCompleteFragment(), R.id.text_fields_content);
                 break;
             case R.id.multi_line_text:
-
                 break;
         }
         return super.onOptionsItemSelected(item);
