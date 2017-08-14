@@ -10,7 +10,7 @@
         android:title="Auto_Complete_text"
         app:showAsAction="never" />
     <item
-        android:id="@+id/multi_line_text"
-        android:title="Multi Line Text Field"
+        android:id="@+id/search_view"
+        android:title="Search View"
         app:showAsAction="never" />
 </menu>

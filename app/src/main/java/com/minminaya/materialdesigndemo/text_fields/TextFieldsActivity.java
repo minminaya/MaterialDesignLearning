@@ -1,5 +1,6 @@
 package com.minminaya.materialdesigndemo.text_fields;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -40,7 +41,8 @@ public class TextFieldsActivity extends AppCompatActivity {
                 FragmentUtils.removeAllFragments(getSupportFragmentManager());
                 FragmentUtils.addFragment(getSupportFragmentManager(), new AutoCompleteFragment(), R.id.text_fields_content);
                 break;
-            case R.id.multi_line_text:
+            case R.id.search_view:
+                startActivity(new Intent(this, SearchActivity.class));
                 break;
         }
         return super.onOptionsItemSelected(item);
