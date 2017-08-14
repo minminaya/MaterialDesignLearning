@@ -8,6 +8,7 @@ import android.widget.Button;
 
 import com.minminaya.materialdesigndemo.selection_control.CheckBoxActivity;
 import com.minminaya.materialdesigndemo.text_fields.TextFieldsActivity;
+import com.minminaya.materialdesigndemo.toolbar.ToolBarActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.btn_checkBox, R.id.btn_text_fields})
+    @OnClick({R.id.btn_checkBox, R.id.btn_text_fields, R.id.btn_toolbar})
     public void onViewClicked(View view) {
         switch (view.getId()){
             case R.id.btn_checkBox:
@@ -33,6 +34,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.btn_text_fields:
                 openActivity(TextFieldsActivity.class);
+                break;
+            case R.id.btn_toolbar:
+                openActivity(ToolBarActivity.class);
                 break;
         }
     }

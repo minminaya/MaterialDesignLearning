@@ -32,6 +32,14 @@
                 android:text="text_fields"
                 android:textSize="21sp"
                 android:theme="@style/MainActivityButton" />
+
+            <Button
+                android:id="@+id/btn_toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="toolbar"
+                android:textSize="21sp"
+                android:theme="@style/MainActivityButton" />
         </LinearLayout>
     </ScrollView>
 
