@@ -18,18 +18,22 @@
         <item name="colorControlActivated">@color/colorPrimary</item>
 
     </style>
+
     <style name="TextFieldActivity_Text_Fields" parent="Theme.AppCompat.Light">
         <item name="colorControlNormal">@color/tomato</item>
         <item name="colorControlActivated">@color/sienna</item>
 
     </style>
+
     <style name="TextFieldActivity_Text_Fields_full_width" parent="Widget.AppCompat.EditText">
         <item name="android:padding">20sp</item>
         <item name="android:background">@null</item>
     </style>
+
     <style name="MyOverFlowText" parent="TextAppearance.AppCompat.Small">
         <item name="android:textColor">@color/green</item>
     </style>
+
     <style name="AutoComplete" parent="Widget.AppCompat.Light.AutoCompleteTextView">
         <item name="android:background">@color/tomato</item>
         <item name="colorControlNormal">@color/cardview_dark_background</item>
@@ -65,7 +69,20 @@
         <item name="colorControlHighlight">@color/indigo</item>
         <item name="colorButtonNormal">@color/pink</item>
     </style>
+
     <style name="MyFloatingActionButton" parent="Theme.AppCompat.Light">
         <item name="colorAccent">@color/purple</item>
+    </style>
+
+    <style name="MyRaidoButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/purple</item>
+        <item name="colorControlActivated">@color/pink</item>
+        <item name="android:colorForeground">@color/grey</item>
+    </style>
+
+    <style name="MySwitch" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/purple</item>
+        <item name="colorControlActivated">@color/pink</item>
+        <item name="android:colorForeground">@color/grey</item>
     </style>
 </resources>

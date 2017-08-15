@@ -47,6 +47,13 @@
                 android:text="button"
                 android:textSize="21sp"
                 android:theme="@style/MainActivityButton" />
+            <Button
+                android:id="@+id/btn_select_control"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="btn_select_control"
+                android:textSize="21sp"
+                android:theme="@style/MainActivityButton" />
         </LinearLayout>
     </ScrollView>
 

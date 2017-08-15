@@ -31,7 +31,8 @@
         <activity
             android:name=".toolbar.ToolBarActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".button.ButtonActivity"></activity>
+        <activity android:name=".button.ButtonActivity" />
+        <activity android:name=".selection_control.SelectControlActivity"></activity>
     </application>
 
 </manifest>
