@@ -79,6 +79,13 @@
                 android:text="bottom_navigation"
                 android:textSize="21sp"
                 android:theme="@style/MainActivityButton" />
+            <Button
+                android:id="@+id/btn_dialogs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dialogs"
+                android:textSize="21sp"
+                android:theme="@style/MainActivityButton" />
         </LinearLayout>
     </ScrollView>
 

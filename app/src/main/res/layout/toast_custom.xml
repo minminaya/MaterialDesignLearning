@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:text="自定义View让Toast加载"
+    android:padding="8dp"
+    android:gravity="center"
+    android:textColor="@color/white"
+    android:textSize="16sp"
+    android:drawablePadding="10dp"
+    android:drawableStart="@mipmap/ic_launcher"
+    android:background="@color/indigo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+     />

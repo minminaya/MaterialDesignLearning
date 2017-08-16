@@ -35,7 +35,11 @@
         <activity android:name=".selection_control.SelectControlActivity" />
         <activity android:name=".RatingBarActivity.RatingActivity" />
         <activity android:name=".cardview.CardViewActivity" />
-        <activity android:name=".bottom_navigation.BottomNavigationActivity"></activity>
+        <activity android:name=".bottom_navigation.BottomNavigationActivity" />
+        <activity
+            android:name=".dialogs.DialogsActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
     </application>
 
 </manifest>
