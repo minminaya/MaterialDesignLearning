@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.minminaya.materialdesigndemo.snackbar.SnackBarActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_snack_bar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="snack_bar" />
+
+        <Button
+            android:id="@+id/btn_snack_bar_custom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="snack_bar_custom" />
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="20dp"
+        android:src="@mipmap/ic_launcher" />
+</android.support.design.widget.CoordinatorLayout>

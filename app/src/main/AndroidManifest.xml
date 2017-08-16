@@ -38,8 +38,8 @@
         <activity android:name=".bottom_navigation.BottomNavigationActivity" />
         <activity
             android:name=".dialogs.DialogsActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".snackbar.SnackBarActivity"></activity>
     </application>
 
 </manifest>
