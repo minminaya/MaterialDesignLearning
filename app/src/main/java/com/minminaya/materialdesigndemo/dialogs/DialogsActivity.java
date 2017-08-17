@@ -33,8 +33,9 @@ public class DialogsActivity extends AppCompatActivity {
 
     }
 
-    @OnClick({R.id.alert, R.id.toast, R.id.toast_custom})
+    @OnClick({R.id.alert, R.id.toast, R.id.toast_custom, R.id.confirmation_dialogs_single_custom, R.id.confirmation_dialogs_multi, R.id.confirmation_dialogs_single})
     public void onViewClicked(View view) {
+
         switch (view.getId()) {
             case R.id.alert:
                 AlertDialog.Builder builder = new AlertDialog.Builder(DialogsActivity.this, R.style.MyAlert)
@@ -79,8 +80,78 @@ public class DialogsActivity extends AppCompatActivity {
                 //设置位置
                 int margin = getResources().getDimensionPixelSize(R.dimen.toast_vertical_margin);
                 toast1.setGravity(Gravity.BOTTOM | Gravity.CENTER_VERTICAL, 0, margin);
-                
+
                 toast1.show();
+                break;
+            case R.id.confirmation_dialogs_single:
+                AlertDialog.Builder builder2 = new AlertDialog.Builder(DialogsActivity.this)
+                        .setTitle("title")
+                        .setSingleChoiceItems(getResources().getStringArray(R.array.dog_list), 0, new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+
+                            }
+                        })
+                        .setPositiveButton("PositiveButton", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                Toast.makeText(DialogsActivity.this, "PositiveButton", Toast.LENGTH_SHORT).show();
+                            }
+                        }).setNegativeButton("NegativeButton", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                Toast.makeText(DialogsActivity.this, "NegativeButton", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                AlertDialog alertDialog2 = builder2.create();
+                alertDialog2.show();
+                break;
+            case R.id.confirmation_dialogs_multi:
+                AlertDialog.Builder builder3 = new AlertDialog.Builder(DialogsActivity.this)
+                        .setTitle("title")
+                        .setMultiChoiceItems(getResources().getStringArray(R.array.dog_list), null, new DialogInterface.OnMultiChoiceClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which, boolean isChecked) {
+
+                            }
+                        })
+                        .setPositiveButton("PositiveButton", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                Toast.makeText(DialogsActivity.this, "PositiveButton", Toast.LENGTH_SHORT).show();
+                            }
+                        }).setNegativeButton("NegativeButton", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                Toast.makeText(DialogsActivity.this, "NegativeButton", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                AlertDialog alertDialog3 = builder3.create();
+                alertDialog3.show();
+                break;
+            case R.id.confirmation_dialogs_single_custom:
+                //初始化样式
+                AlertDialog.Builder builder4 = new AlertDialog.Builder(DialogsActivity.this, R.style.MyConfirmationDialog)
+                        .setTitle("title")
+                        .setMultiChoiceItems(getResources().getStringArray(R.array.dog_list), null, new DialogInterface.OnMultiChoiceClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which, boolean isChecked) {
+
+                            }
+                        })
+                        .setPositiveButton("PositiveButton", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                Toast.makeText(DialogsActivity.this, "PositiveButton", Toast.LENGTH_SHORT).show();
+                            }
+                        }).setNegativeButton("NegativeButton", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                Toast.makeText(DialogsActivity.this, "NegativeButton", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                AlertDialog alertDialog4 = builder4.create();
+                alertDialog4.show();
                 break;
         }
     }

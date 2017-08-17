@@ -16,6 +16,7 @@
         android:id="@+id/toast"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:textAllCaps="false"
         android:layout_below="@id/alert"
         android:text="toast" />
 
@@ -24,6 +25,30 @@
         android:id="@+id/toast_custom"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:textAllCaps="false"
         android:layout_below="@id/toast"
         android:text="toast自定义view" />
+
+    <Button
+        android:id="@+id/confirmation_dialogs_single"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textAllCaps="false"
+        android:layout_below="@id/toast_custom"
+        android:text="confirmation_dialogs_single" />
+
+    <Button
+        android:id="@+id/confirmation_dialogs_multi"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textAllCaps="false"
+        android:layout_below="@id/confirmation_dialogs_single"
+        android:text="confirmation_dialogs_multi" />
+    <Button
+        android:id="@+id/confirmation_dialogs_single_custom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textAllCaps="false"
+        android:layout_below="@id/confirmation_dialogs_multi"
+        android:text="confirmation_dialogs_single_custom" />
 </RelativeLayout>
