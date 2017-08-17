@@ -40,7 +40,8 @@
             android:name=".dialogs.DialogsActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".snackbar.SnackBarActivity" />
-        <activity android:name=".progress.ProgressActivity"></activity>
+        <activity android:name=".progress.ProgressActivity" />
+        <activity android:name=".bottom_sheet.BottomSheetActivity"></activity>
     </application>
 
 </manifest>
